@@ -1,0 +1,63 @@
+{
+  Records: [
+    {
+      messageId: 3a766717-41c1-404b-9dbc-976577f8145d,
+      receiptHandle: AQEBidlaNWLmKjEaHvHcvzK2wLv5oGqyrJlLyGtFC309MLNtFyLvevH1eUAs8Qpnb3AwBvDU0zMKZvX03KD7YCCBWoh7emYAoynRMkFunNvIrkxK5EEFxb7xFT2JnOOpbkYdDXdhiXYjENGexAFZEqAUvZT29l8Ytbp7YhVTH4eNOayjiqNULiMPVwIbid07jgdXv8EHKJqElRQKHHA3NOCJI6RxVO1ilCgjdQ3F7otvaiwerx8VlRkt/y596HeoPPttubvjd63BLdC1eKxYeOHP0Rkqx9INYLAGJXEJLXwmebbQ9w9YhuQTv61jGHtQLk6pAPYNzPHQX1XzjdHKuWG4B1OhUGTfhZKQbyRnnV09Wm/UvejpEfNyzKgJMfuU7s1obNPLuJQtO3Ur7/qtFIPhQnp3dLRhUiHbFfckaR3U=,
+      eventSourceARN: arn
+      :
+      aws: sqs
+      :
+      us-east-1: 487658338491
+      :
+      mopi-s3-event-notification-queue,
+      eventSource: aws:sqs,
+      awsRegion: us-east-1,
+      body: {
+        "Records": [
+          {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2022-06-03T17:16:07.243Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+              "principalId": "A349GCMCWCNHIL"
+            },
+            "requestParameters": {
+              "sourceIPAddress": "95.91.241.100"
+            },
+            "responseElements": {
+              "x-amz-request-id": "FTRVKJCREQ9VH3TN",
+              "x-amz-id-2": "gUXh8dMwpDwlVi94hqjMktEZiRvgrcXPcaBwtvBP+rdbwwHyy3ouo1W+GjX864NSSwBcA8DUYckfOwJwVlKJpCM3HaBVGh1B"
+            },
+            "s3": {
+              "s3SchemaVersion": "1.0",
+              "configurationId": "tf-s3-queue-20220603143540310000000002",
+              "bucket": {
+                "name": "mopi-uploads-bucket",
+                "ownerIdentity": {
+                  "principalId": "A349GCMCWCNHIL"
+                },
+                "arn": "arn:aws:s3:::mopi-uploads-bucket"
+              },
+              "object": {
+                "key": "cke/data.csv",
+                "size": 428,
+                "eTag": "aee3550c3e4cb8c7376e75c065d43b45",
+                "sequencer": "00629A41D73865B1B2"
+              }
+            }
+          }
+        ]
+      },
+      md5OfBody: 05b2e3e9541a26fb3fab3fbf86a668c7,
+      attributes: {
+        ApproximateReceiveCount=1,
+        SentTimestamp=1654276568096,
+        SenderId=AIDAJHIPRHEMV73VRJEBU,
+        ApproximateFirstReceiveTimestamp=1654276568107
+      },
+      messageAttributes: {}
+    }
+  ]
+}

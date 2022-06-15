@@ -1,0 +1,13 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: cke_migration.App
+      CodeUri: s3://qqq-lambda-code/ea3649884c5bf892bc4cc03dc1c20b1a
+      Runtime: java11
+      Architectures:
+      - x86_64
+    Metadata:
+      SamResourceId: Function
